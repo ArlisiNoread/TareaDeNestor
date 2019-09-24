@@ -15,9 +15,11 @@ public class principal {
 			T[1] = Integer.parseInt(st.nextToken());
 
 			if (!(1 <= T[0] && T[0] <= 50) && !(1 <= T[1] && T[1] <= 50)) {
+				scan.close();
 				return;
 			}
 		} else {
+			scan.close();
 			return;
 		}
 
@@ -29,7 +31,7 @@ public class principal {
 				casos[i][j] = fila.charAt(j);
 			}
 		}
-
+		scan.close();
 		encuentraCuadrados(casos);
 	}
 
